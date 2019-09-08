@@ -1,0 +1,33 @@
+{
+  "name": "csm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cpx manifest.json build",
+    "clear": "rimraf build/* && npm run copy",
+    "prestart": "npm run clear",
+    "start": "parcel watch src/content-script/index.tsx src/popup/popup.html src/background.ts --out-dir build --no-hmr",
+    "prebuild": "npm run clear",
+    "build": "parcel build src/content-script/index.tsx src/popup/popup.html src/background.ts --out-dir build --no-content-hash"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "0.0.88",
+    "autoprefixer": "^9.6.1",
+    "cpx": "^1.5.0",
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.0-module.beta.1",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
