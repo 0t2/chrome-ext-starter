@@ -1,5 +1,5 @@
 {
-  "name": "csm",
+  "name": "chrome extension starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,19 +15,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/chrome": "0.0.88",
-    "autoprefixer": "^9.6.1",
+    "@types/chrome": "0.0.91",
+    "autoprefixer": "^9.7.4",
     "cpx": "^1.5.0",
-    "parcel-bundler": "^1.12.3",
-    "postcss-modules": "^1.4.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
     "rimraf": "^3.0.0",
-    "sass": "^1.23.0-module.beta.1",
-    "typescript": "^3.6.2"
+    "sass": "^1.24.5",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
